@@ -14,17 +14,31 @@ document.getElementsByClassName("fas fa-times")[0].addEventListener("click",
 );
 */
 
+// JS vanilla 2
+
+// document.getElementsByClassName("fas fa-bars")[0].addEventListener("click",
+//   function() {
+//     document.getElementsByClassName("hamburger-menu")[0].classList.add("active");
+//   }
+// );
+//
+// document.getElementsByClassName("fas fa-times")[0].addEventListener("click",
+//   function() {
+//     document.getElementsByClassName("hamburger-menu")[0].classList.remove("active");
+//   }
+// );
+
 
 // jQuery
 
-$("i.fas.fa-bars").click(
+$("header-right i.fas.fa-bars").click(
   function() {
-    $(".hamburger-menu").show();
+    $(".hamburger-menu").addClass("active");
   }
 );
 
-$("i.fas.fa-times").click(
+$("hamburger-menu i.fas.fa-times").click(
   function() {
-    $(".hamburger-menu").hide();
+    $(".hamburger-menu").removeClass("active");
   }
 );
