@@ -31,13 +31,13 @@ document.getElementsByClassName("fas fa-times")[0].addEventListener("click",
 
 // jQuery
 
-$("header-right i.fas.fa-bars").click(
+$(".header-right i.fas.fa-bars").click(
   function() {
     $(".hamburger-menu").addClass("active");
   }
 );
 
-$("hamburger-menu i.fas.fa-times").click(
+$(".hamburger-menu i.fas.fa-times").click(
   function() {
     $(".hamburger-menu").removeClass("active");
   }
